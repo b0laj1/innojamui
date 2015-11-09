@@ -21,6 +21,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,11 +56,13 @@
   <table width="100%" height="750">
      <tr>
       <td width="30%" height="100%">
-       <iframe width="100%" height="100%" src="https://developer.sapjam.com/auth/status" class="frame">
+       <!--<iframe width="100%" height="100%" src="https://developer.sapjam.com/auth/status" class="frame">-->
+       <div id='feed'></div>
           </iframe>
       </td>
-      <td width="70%">
-       <iframe width="100%" height="100%" src="https://app.minemytext.com/project/372/" id="col-lg-12" class="frame">
+      <td width="40%">
+      <iframe width="100%" height="100%" src="https://app.minemytext.com/project/372/" id="col-lg-12" class="frame">
+     
           </iframe>
          </td>
        </tr>
@@ -75,5 +78,14 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        $('#minemytext').load('https://app.minemytext.com/project/372/');
+      </script>
+      
+      <script type="text/javascript" src="https://developer.sapjam.com/assets/feed_widget_v1.js"></script>
+<script type="text/javascript">
+sapjam.feedWidget.init("https://developer.sapjam.com/widget/v1/feed", "session");
+var w = sapjam.feedWidget.create("feed", {type: "group", avatar: true, group_id: "SFnFvNeBXWeYGgLagkKqXr,i0hdG6fTOsnrgTiDLPJLFj", live_update: true, mobile_mode: true, post_mode: "inline", reply_mode: "inline"});
+</script>
   </body>
 </html>
