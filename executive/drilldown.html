@@ -1,101 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Starter Template for Bootstrap</title>
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="starter-template.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="dist/assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">nPower</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Executive Dashboard</a></li>
-            <li><a class="active" href="#">CLC Backlog</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-
-      <div class="starter-template">
- <table width="100%" height="750">
-    <tr>
-     <td width="30%" height="300">
-      customer demographics
-     </td>
-     <td width="70%" height="300">
-      Lumira Application
-        </td>
-       </tr>
-       <tr>
-     <td width="30%" height="300">
-      <iframe width="100%" height="100%" src="https://developer.sapjam.com/auth/status" class="frame"></iframe>
-     </td>
-     <td width="70%" height="300">
-      <table>
-       <tr>
-        <td><h1>Suggestions:</h1> 
-         <ul>
-          <li>reduce xy</li>
-          <li>reduce xy</li>
-          <li>reduce xy</li>
-          <li>reduce xy</li>
-        </td>
-       </tr>
-       <tr>
-        <td><img src="http://i.imgur.com/nvnPpNE.png" alt="Timeline" width="70%"></td>
-       </tr>
-      </table>
-        </td>
-       </tr>
-      </table>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+        aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">nPower</a>
       </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Executive Dashboard</a></li>
+          <li><a class="active" href="#">CLC Backlog</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
 
-    </div><!-- /.container -->
+  <div class="container">
+
+    <div class="starter-template">
+      <table width="100%" height="750">
+        <tr>
+          <td width="30%" height="300">
+            <table id ="demographics" class="table table-bordered table-striped">
+              <tr>
+ <td>First Name</td>
+
+ <td>Last Name</td>
+
+ <td>Date of Birth</td>
+
+ <td>Location</td>
+
+ <td>Gender</td>
+ <td>Action</td>
+
+</tr>
+            </table>
+          </td>
+          <td width="70%" height="300">
+            Lumira Application
+          </td>
+        </tr>
+        <tr>
+          <td width="30%" height="300">
+            <iframe width="100%" height="100%" src="https://developer.sapjam.com/auth/status" class="frame"></iframe>
+          </td>
+          <td width="70%" height="300">
+            <table>
+              <tr>
+                <td>
+                  <h1>Suggestions:</h1>
+                  <ul>
+                    <li>reduce xy</li>
+                    <li>reduce xy</li>
+                    <li>reduce xy</li>
+                    <li>reduce xy</li>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="http://i.imgur.com/nvnPpNE.png" alt="Timeline" width="70%"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+  <!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script>
+ 
+  var json = [{"clientId":1,"firstName":"Brandon","lastName":"Fox","dateOfBirth":"Aug 7, 1974 12:00:00 AM","location":"BREASTON","gender":"male","longitude":-1.372239,"latitude":52.830227,"accountNumber":"JY 92 46 97 B"}, {"clientId":2,"firstName":"Muhammad","lastName":"Powell","dateOfBirth":"Aug 7, 1950 12:00:00 AM","location":"LICKEY","gender":"male","longitude":-1.976141,"latitude":52.393,"accountNumber":"HZ 40 87 54 A"}, {"clientId":3,"firstName":"Finley","lastName":"Fry","dateOfBirth":"Apr 16, 1994 12:00:00 AM","location":"LORN","gender":"male","longitude":-4.660955,"latitude":56.04822,"accountNumber":"TZ 70 73 95 B"}, {"clientId":4,"firstName":"Harriet","lastName":"Morgan","dateOfBirth":"Feb 10, 1982 12:00:00 AM","location":"FRIETH","gender":"female","longitude":-0.969583,"latitude":51.477825,"accountNumber":"TG 54 54 15 D"}, {"clientId":5,"firstName":"Morgan","lastName":"Barton","dateOfBirth":"Jul 6, 1939 12:00:00 AM","location":"PARSON DROVE","gender":"male","longitude":3.91E-4,"latitude":52.57037,"accountNumber":"SJ 55 82 18 A"}, {"clientId":6,"firstName":"Rosie","lastName":"Miles","dateOfBirth":"Nov 14, 1983 12:00:00 AM","location":"AUCHLUNACHAN","gender":"female","longitude":-5.270588,"latitude":57.258396,"accountNumber":"WT 06 74 28 D"}, {"clientId":7,"firstName":"Faith","lastName":"Fletcher","dateOfBirth":"Apr 25, 1971 12:00:00 AM","location":"MORFA BYCHAN","gender":"female","longitude":-4.137592,"latitude":52.91887,"accountNumber":"JX 24 91 33 C"}, {"clientId":8,"firstName":"Noah","lastName":"Waters","dateOfBirth":"Sep 28, 1993 12:00:00 AM","location":"HEST BANK","gender":"male","longitude":-2.939071,"latitude":53.630085,"accountNumber":"BS 31 10 20 B"}, {"clientId":9,"firstName":"Hannah","lastName":"Carr","dateOfBirth":"Aug 30, 1956 12:00:00 AM","location":"CHARLECOTE","gender":"female","longitude":-1.817817,"latitude":51.72638,"accountNumber":"AG 52 97 07 A"}, {"clientId":10,"firstName":"Jake","lastName":"Burrows","dateOfBirth":"Feb 2, 1957 12:00:00 AM","location":"LLANGEFNI","gender":"male","longitude":-4.362363,"latitude":53.269108,"accountNumber":"RB 31 70 92 A"}]
+  
+  var table = document.getElementById("demographics");
+  
+  for(i = 0; i < json.length; i++) {
+      var row = table.insertRow();
+  
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    
+    // Add some text to the new cells:
+    cell1.innerHTML = json[i]['firstName'];
+    cell2.innerHTML = json[i]['lastName'];
+    cell2.innerHTML = json[i]['dateOfBirth'];
+    cell2.innerHTML = json[i]['location'];
+    cell2.innerHTML = json[i]['gender'];
+    ;
+  }
+  </script>
+</body>
+
 </html>
